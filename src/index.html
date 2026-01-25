@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node JS Project with Tailwind</title>
+
+    <!-- Google Fonts Robato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts Ewert -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ewert&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <!-- Web Page Icon-->
+    <link rel="icon" type="image/svg+xml" href="./assets/tailwindcss.svg" />
+
+    <!-- Built tailwind CSS -->
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- color -->
+
+    <p class="text-sky-800 text-2xl p-3 m-2">Colored Text</p>
+
+    <!-- Text -->
+    <p class="uppercase p-3 m-2">Uppercase</p>
+    <p class="lowercase p-3 m-2">Lowercase</p>
+    <p class="italic p-3 m-2">italic</p>
+    <p class="font-bold p-3 m-2">Bold</p>
+    <p class="text-start text-red-500 p-3 m-2">Start</p>
+    <p class="text-center text-red-500 p-3 m-2">Center</p>
+    <p class="text-end text-red-500 p-3 m-2">End</p>
+    <p class="hover:text-techCareer-green p-3 m-2 w-fit">Hover Text</p>
+
+    <hr />
+    <hr />
+
+    <!-- Border -->
+
+    <p
+      class="border-4 border-blue-700 shadow-xl hover:text-blue-700 hover:bg-cyan-500 p-4 w-fit mx-auto my-3"
+    >
+      Border Hover Text
+    </p>
+
+    <hr />
+    <hr />
+
+    <!-- Button -->
+
+    <button
+      class="text-techCareer-green bg-black hover:bg-techCareer-green hover:text-black border-2 border-cyan-800 w-fit p-2 m-3"
+    >
+      Button1
+    </button>
+
+    <!-- Link -->
+
+    <a href="#" class="hover:text-techCareer-green">Click Link</a>
+
+    <hr />
+    <hr />
+
+    <!--Table -->
+
+    <table class="m-3 ml-8">
+      <thead>
+        <tr>
+          <th class="bg-black text-white leading-6 text-md p-2 pr-4">Name</th>
+          <th class="bg-black text-white leading-6 text-md p-2 pr-4">
+            Surname
+          </th>
+          <th class="bg-black text-white leading-6 text-md p-2 pr-4">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-slate-400">
+          <td class="text-center">Mustafa</td>
+          <td class="text-center">Can</td>
+          <td class="text-center">30</td>
+        </tr>
+        <tr class="bg-slate-400">
+          <td class="text-center">Selin</td>
+          <td class="text-center">Can</td>
+          <td class="text-center">25</td>
+        </tr>
+        <tr class="bg-slate-400">
+          <td class="text-center">Mert</td>
+          <td class="text-center">Ozyilmaz</td>
+          <td class="text-center">30</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <hr />
+    <!-- List -->
+    <ol class="list-decimal m-8">
+      <li>Item-1</li>
+      <li>Item-2</li>
+      <li>Item-3</li>
+      <li>Item-4</li>
+      <li>Item-5</li>
+    </ol>
+
+    <ul class="list-disc m-8">
+      <li>Item-1</li>
+      <li>Item-2</li>
+      <li>Item-3</li>
+      <li>Item-4</li>
+      <li>Item-5</li>
+    </ul>
+    <hr />
+    <hr />
+    <!-- Alert -->
+
+    <div
+      class="bg-yellow-100 text-yellow-700 border-s-4 border-yellow-500 p-3 m-3 w-fit"
+    >
+      <p>Attention</p>
+      <p>There is no any enterence</p>
+    </div>
+
+    <hr />
+    <hr />
+
+    <!-- Form & Spinner -->
+    <form
+      action="#"
+      method="get"
+      autocomplete="on"
+      class="w-full max-w-sm border-2 border-stone-800 m-3 p-2"
+    >
+      <div class="ml-2 bg-transparent w-fit">
+        <label for="name" class="block">please enter your name</label>
+        <input type="text" name="Name" id="name" placeholder="Name" />
+        <label for="surname" class="block">please enter your surname</label>
+        <input type="text" name="Surname" id="surname" placeholder="Surname" />
+        <br />
+        <br />
+        <button
+          type="submit"
+          class="bg-blue-400 shadow-md text-black p-1 mr-2 border-2 border-slate-500 rounded-md hover:text-teal-700"
+        >
+          Submit
+        </button>
+        <button
+          type="reset"
+          class="bg-red-400 shadow-md text-black p-1 border-2 border-slate-500 rounded-md hover:text-teal-700"
+        >
+          Reset
+        </button>
+      </div>
+    </form>
+
+    <div class="m-7 flex items-center justify-start">
+      <div
+        class="h-5 w-5 animate-spin rounded-full border-2 border-gray-300 border-t-blue-500"
+      ></div>
+    </div>
+    <hr />
+    <hr />
+    <!-- Grid & Responsive Design -->
+    <h3 class="h3 m-3 lg:text-2xl text-lg">Responsive Design</h3>
+    <div class="container mx-auto p-3">
+      <div
+        class="flex flex-wrap justify-around align-middle lg:mx-0 mx-2 lg:gap-0 gap-3"
+      >
+        <div class="w-full lg:w-1/4">
+          <div class="bg-techCareer-green text-black p-3 rounded">
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident dicta atque libero placeat eveniet, incidunt, ut quod
+                veniam ab totam deserunt fuga asperiores debitis quaerat?
+                Laboriosam cumque incidunt doloremque tempore.</span
+              ><span
+                >Reprehenderit repellendus illo minima maxime harum enim ipsum
+                iure! Consequatur modi natus magnam voluptatum vel? Ducimus
+                perferendis nulla, unde sapiente ex, aliquam, odit voluptatem
+                explicabo animi voluptates officiis assumenda fugiat?</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/4">
+          <div class="bg-techCareer-green text-black p-3 rounded">
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident dicta atque libero placeat eveniet, incidunt, ut quod
+                veniam ab totam deserunt fuga asperiores debitis quaerat?
+                Laboriosam cumque incidunt doloremque tempore.</span
+              ><span
+                >Reprehenderit repellendus illo minima maxime harum enim ipsum
+                iure! Consequatur modi natus magnam voluptatum vel? Ducimus
+                perferendis nulla, unde sapiente ex, aliquam, odit voluptatem
+                explicabo animi voluptates officiis assumenda fugiat?</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/4">
+          <div class="bg-techCareer-green text-black p-3 rounded">
+            <p>
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Provident dicta atque libero placeat eveniet, incidunt, ut quod
+                veniam ab totam deserunt fuga asperiores debitis quaerat?
+                Laboriosam cumque incidunt doloremque tempore.</span
+              ><span
+                >Reprehenderit repellendus illo minima maxime harum enim ipsum
+                iure! Consequatur modi natus magnam voluptatum vel? Ducimus
+                perferendis nulla, unde sapiente ex, aliquam, odit voluptatem
+                explicabo animi voluptates officiis assumenda fugiat?</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <hr />
+
+    <!-- Different Fonts -->
+    <p class="text-techCareer-green font-robatoFont text-2xl p-3 m-2">
+      Robato Font
+    </p>
+
+    <p class="font-ewertFont text-2xl p-3 m-2 w-fit">Ewert Font</p>
+  </body>
+</html>
