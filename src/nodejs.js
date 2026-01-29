@@ -21,3 +21,13 @@ function check(item) {
   return item > 0;
 }
 console.log(arr.every(check));
+
+// Import the data from different js files (COMMON.JS Method)
+
+const { headerData, navigation } = require("./module_require/header");
+const footer = require("./module_require/footer");
+const main = require("./module_require/main");
+
+headerData();
+footer();
+main();
