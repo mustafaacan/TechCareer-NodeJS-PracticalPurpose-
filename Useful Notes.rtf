@@ -45,9 +45,8 @@ Repository	: GitHub , gitlab url\
 Keywords : needed keywords for the project\
 	\
 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs36 \cf0 \kerning1\expnd0\expndtw0 Bash commands 2 (npm commands)\
+\f0\fs36 \kerning1\expnd0\expndtw0 Bash commands 2 (npm commands)\
 \
 
 \fs24 npm install <packageName> \'97> package installing. ** just npm install command can be used for dependency installation\
@@ -78,8 +77,9 @@ npm run <keywords> :   according to keyword, activates the script\
 
 \f1 \expnd0\expndtw0\kerning0
 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\fs36 Nodemon 
+\fs36 \cf0 Nodemon 
 \fs24 \'97> makes the development easier. Watches the app and if detect any changes re-run the app. \
 \
 npm install -g nodemon \'97> nodeJS needed. -g stands for this structure will be available for whole projects.\
@@ -96,22 +96,23 @@ nodemon -q \'97> only for outputs without explanations\
 
 \f0\fs48 Module.Export (old NODE.js system) and Export (new js system)Examples\
 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f1\fs24 Module.Export \'97> commonJS world (only for older systems)\
+\f1\fs24 \cf0 Module.Export \'97> commonJS world (only for older systems)\
 \
 Export / import \'97> ES Modulo\
 \
 \
 \pard\pardeftab720\partightenfactor0
-\cf0 \outl0\strokewidth0 \strokec2 (CommonJS / legacy)
-\f0\fs48 \outl0\strokewidth0 \
+\cf0 (CommonJS / legacy)
+\f0\fs48 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 module.exports = class User \{\}; (user.js)\
 const User = require("./user"); (app.js)\
 \
 \pard\pardeftab720\sa280\partightenfactor0
 
-\f2\b\fs28 \cf0 \outl0\strokewidth0 \strokec2 (Modern / ES Module)\
+\f2\b\fs28 \cf0 (Modern / ES Module)\
 \pard\pardeftab720\partightenfactor0
 
 \f3\b0\fs26 \cf0 // user.js\
@@ -124,10 +125,11 @@ import User, \{name\} from "./user.js";\
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs48 \cf0 \outl0\strokewidth0 EVENT EMITTER\
+\f0\fs48 \cf0 EVENT EMITTER\
 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\fs36 To provide asynchrony, especially for network operations, file operations and long term ops, useful structures. \
+\fs36 \cf0 To provide asynchrony, especially for network operations, file operations and long term ops, useful structures. \
 \
 NODE.JS \'97> Event - Driven
 \fs48 \
@@ -151,8 +153,20 @@ removeListener(eventName, Listener) \'97> removes the listener\
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs48 \cf0 \
+\f0\fs48 \cf0 FILENAME, DIRNAME, FILE\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 __filename (global variable) \'97> gives the full path of a file 
+\f0\fs48 \
 \
 
-\f1\fs24 \
+\f1\fs24 __dirname (global variable) \'97> gives the full path of a folder. Other word, the full path of  the folder which contains the target file	
+\f0\fs48 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \
+fs \'97> File system management (read, write)\
+\
+\
 }
