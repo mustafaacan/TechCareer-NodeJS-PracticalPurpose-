@@ -77,8 +77,9 @@
     "node_test": "node ./src/nodejs.js",
     "nodemon": "nodemon ./src/nodejs.js",
     "nodemon_q": "nodemon -q ./src/nodejs.js",
-    "nodemon_event": "nodemon ./src/event_emitter.js",
-    "nodemon_fileOps": "nodemon ./src/dirname_filename_fileOps.js"
+    "nodemon_event": "nodemon ./src/2_event_emitter.js",
+    "nodemon_fileOps": "nodemon ./src/1_dirname_filename_fileOps.js",
+    "nodemon_stream": "nodemon ./src/3_streams.js"
   },
   "repository": {
     "type": "git",
