@@ -10,7 +10,7 @@ npm run tailwind (FOR CSS OUTPUT) (CLOSE)
 npm run nodemon_HTMLServer
 (on browser) http://localhost:1111
 
-ALTERNATIVE PATH
+ALTERNATIVE ROUTE
 
 npm i -D concurrently (FOR FIRST TIME)
 npm run dev
