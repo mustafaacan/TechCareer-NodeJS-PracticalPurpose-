@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "mocha": "^11.7.5",
     "tailwindcss": "^3.4.19"
   },
@@ -80,7 +81,9 @@
     "nodemon_event": "nodemon ./src/2_event_emitter.js",
     "nodemon_fileOps": "nodemon ./src/1_dirname_filename_fileOps.js",
     "nodemon_stream": "nodemon ./src/3_streams.js",
-    "nodemon_http": "nodemon ./src/4_HTTPCreateServer.js"
+    "nodemon_http": "nodemon ./src/4_HTTPCreateServer.js",
+    "nodemon_HTMLServer": "nodemon ./src/5_HTMLDocumentServer.js",
+    "dev": "concurrently \"npm run tailwind\" \"npm run nodemon_HTMLServer\""
   },
   "repository": {
     "type": "git",
